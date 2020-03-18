@@ -1,5 +1,15 @@
 # Laravel Vapor Test
 
-Skeleton application that can be used to delpoy to Laravel Vapor so setting up an application with a database, queue worker can be tested for the first time.
+Skeleton application that can be deployed using [https://vapor.laravel.com](Laravel Vapor) to test out how it works. Check the "AWS Services Used/Tested` to see which AWS services are used by the application.
 
-The application contains Laravel basic generated authentication system that requires users to validate their email address by sending a queueable email.
+## App
+
+The application contains Laravel's basic generated authentication system that requires users to validate their email address by sending a queueable email. Once an account is verified a user can sign-in to the application.
+
+## AWS Services Used/Tested
+
+- Lambda (Serverless Functions)
+- RDS (Database)
+- SES (Email) - Must add e-mail address to SES that define in the `.env` for the `MAIL_FROM_ADDRESS`
+- SQS (Queue)
+- DynamoDB (Caching)
