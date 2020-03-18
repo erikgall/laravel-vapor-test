@@ -10,6 +10,6 @@ The application contains Laravel's basic generated authentication system that re
 
 - Lambda (Serverless Functions)
 - RDS (Database)
-- SES (Email) - Must add e-mail address to SES that define in the `.env` for the `MAIL_FROM_ADDRESS`
+- SES (Email) - Must add e-mail address to SES that is defined in the `.env` (`MAIL_FROM_ADDRESS` key)
 - SQS (Queue)
 - DynamoDB (Caching)
