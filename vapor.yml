@@ -10,6 +10,7 @@ environments:
             - 'php artisan event:cache'
             - 'npm ci && npm run prod && rm -rf node_modules'
     staging:
+        database: laravel_vapor_test
         memory: 1024
         cli-memory: 512
         runtime: php-7.4
